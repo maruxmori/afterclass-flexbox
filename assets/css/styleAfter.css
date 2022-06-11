@@ -1,0 +1,201 @@
+/*Este css lo armamos durante el after, puede tener diferencias con el otro archivo, cosas que probamos en la garabción.
+
+Cualquier duda me preguntan.
+
+Maru.
+*/
+
+@font-face {
+    font-family: 'Abril FatFace';
+    src: url(../font/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins';
+    background-color: #D98F4E;
+    color: white;
+    cursor: url(../img/cursor-pointer.svg), pointer;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    position: sticky;
+    top: 0;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+
+}
+
+.navegacion ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.navegacion ul li a{
+    color: #A64208;
+    border-bottom: solid 1px;
+}
+
+.logoHeader{
+    font-family: 'Abril FatFace';
+    color: #A64208;
+    font-size: 1.5rem;
+}
+
+.banner{
+    background-image: url(../img/muffins.jpeg);
+    height: 70vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    font-family: 'Abril FatFace';
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-left: 5rem;
+
+}
+
+.banner p{
+    font-size: 1.5rem;
+    margin: 5rem;
+
+}
+
+.tituloEspecialidades{
+    font-size: 4rem;
+    font-weight: 900;
+    height: 10rem;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background-image: url(../img/blob.svg);
+    background-repeat: no-repeat;
+    margin-left: 5rem;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.cardEspecialidades{
+    background-color: white;
+    border-radius: 50px;
+    color: #A64208;
+    height: 30rem;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.cardImg {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20rem;
+
+    overflow: hidden;
+}
+.cardImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.button{
+    background-color: #A64208;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.tituloCafe{
+    width: 100vw;
+    height: 12rem;
+    position: relative;
+}
+.tituloCafe h2{
+    font-size: 4rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+}
+.tituloCafe img{
+    width: 8rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.cardCafe{
+    background-color: white;
+    color: #A64208;
+    height: 26rem;
+}
+.cardCafe > .cardImg{
+    border-bottom-right-radius: 150px;
+}
+
+.cardText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros{
+    display: flex;
+    height: 80vh;
+    background-color: white;
+    color: #A64208;
+    margin-top: 2rem;
+}
+
+.nosotrosTexto{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nosotrosTexto h2{
+    font-size: 4rem;
+}
+.item{
+    font-size: 2rem;
+    color: #D98F4E;
+    border-bottom: #D98F4E solid 1px;
+    display: block;
+}
+.nosotrosImagen{
+    width: 60vw;
+}
+.nosotrosImagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

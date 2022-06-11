@@ -1,0 +1,216 @@
+/* Enlace a los archivos de fuentes localmente */
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url(../font/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+/*Reset de propiedades generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins';
+    background-color: #D98F4E;
+    color: white;
+    cursor: url(../img/cursor-pointer.svg), pointer;
+}
+
+a{
+    cursor: url(../img/cursor-hover.svg), pointer;
+}
+/* header (encabezado) */
+
+header{
+    background-color: #F3F9F7;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.logoHeader{
+    color: #A64208;
+    font-family: 'Abril Fatface';
+    font-size: 2rem;
+}
+
+.navegacion ul{
+    display: flex;
+}
+
+.navegacion ul li{
+    width: 6rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navegacion ul li a{
+    color: #A64208;
+    border-bottom: solid 1px #A64208;
+}
+
+
+/* Banner y titulo*/
+.banner{
+    height: 80vh;
+    background-image: url(../img/muffins.jpeg);
+    /*Con estas propiedades genero parallax, hago que la imagen ocupe todo el ancho, y que se quede posición fija*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner h1{
+    font-family: 'Abril Fatface';
+    font-size: 7rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding-left: 5vw;
+}
+
+.banner p {
+    padding-left: 5vw;
+    font-size: 2rem;
+}
+
+/* Primera seccion: especialidades */
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tituloEspecialidades{
+    width: 90vw;
+    height: 30vh;
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: #F3F9F7 2px;
+    background-image: url(../img/blob.svg);
+    background-repeat: no-repeat;
+}
+
+/* card especialidades */
+.cardEspecialidades{
+    background-color: #F3F9F7;
+    color: #D98F4E;
+    width: 25vw;
+    margin: 1rem;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cardImg{
+    width: 20vw;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.cardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button{
+    background-color: #A64208;
+    color: #F3F9F7;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Seccion cafeteria */
+
+.tituloCafe{
+    width: 90vw;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+}
+
+.tituloCafe h2{
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: #F3F9F7 1px;
+}
+
+.tituloCafe img{
+    position: absolute;
+    width: 12rem;
+    top: 5;
+    z-index: -1;
+}
+
+.cardCafe{
+    background-color: #F3F9F7;
+    color: #A64208;
+}
+
+.cardCafe > .cardImg{
+    border-bottom-right-radius: 100px;
+}
+
+.cardText{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*seccion nosotros*/
+.nosotros{
+    background-color: #F3F9F7;
+    color: #A64208;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.nosotrosTexto{
+    width: 30vw;
+    font-size: 2rem;
+}
+.item {
+    font-size: 1.5rem;
+    color: #D98F4E;
+    border-bottom: 1px solid #D98F4E;
+    display: block;
+}
+
+.nosotrosImagen{
+    height: 80vh;
+    flex-grow: 1;
+}
+
+.nosotrosImagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #A64208;
+    height: 20vh;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
